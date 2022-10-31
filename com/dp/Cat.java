@@ -1,4 +1,4 @@
-package com.dp.creational.strategy;
+package com.dp;
 
 import com.dp.Animal;
 
