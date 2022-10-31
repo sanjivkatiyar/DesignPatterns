@@ -21,9 +21,38 @@ public class WorkWithAnimals {
 
         System.out.println("Dog name after method call: " + fido.getName());
 
+        Animal doggy = new Dog();
+
+        Animal kitty = new Cat();
+
+        System.out.println("Doggy says: " + doggy.getSound());
+        System.out.println("Kitty says: " + kitty.getSound());
+
+        Animal[] animals = new Animal[2];
+        animals[0] = doggy;
+        animals[1] = kitty;
+
+        for (Animal animal: animals) {
+            System.out.println("Animal says: " + animal.getSound());
+        }
+
+        speakAnimal(doggy);
+        speakAnimal(kitty);
+
+        ((Dog)doggy).digHole();
+
+        Giraffe giraffe = new Giraffe();
+        giraffe.setName("Frank");
+
+        System.out.println(giraffe.getName());
+
     }
 
     public static void changeObjectName(Dog fido){
         fido.setName("Markus");
+    }
+
+    public static void speakAnimal(Animal animal){
+        System.out.println("Animal says: " + animal.getSound());
     }
 }
