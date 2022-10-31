@@ -46,6 +46,14 @@ public class WorkWithAnimals {
 
         System.out.println(giraffe.getName());
 
+        Monkey monkey = new Monkey();
+        Living.someStaticMethod();
+        monkey.someDefaultMethod();
+
+        Living monkey1 = new Monkey();
+        //monkey1.someStaticMethod();
+        monkey1.someDefaultMethod();
+
     }
 
     public static void changeObjectName(Dog fido){
